@@ -3,6 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const output = document.getElementById("output");
     input.focus();
 
+    // Bloqueando Ctrl+C e Ctrl+V
+    document.addEventListener("keydown", (event) => {
+        // Verifica se a tecla pressionada é Ctrl+C (Código 67) ou Ctrl+V (Código 86)
+        if ((event.ctrlKey && event.key === 'c') || (event.ctrlKey && event.key === 'v')) {
+            event.preventDefault(); // Impede a ação padrão do navegador
+            appendToOutput("Copy and paste are disabled in this terminal.");
+        }
+    });
+
     let authStep = 0; // Controle de autenticação inicial
     let isAuthenticated = false; // Controle se a autenticação foi bem-sucedida
     let sudoAuthenticated = false; // Controle se o sudo foi autenticado
