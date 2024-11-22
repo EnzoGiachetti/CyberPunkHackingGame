@@ -21,8 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const directoryContents = [
         "Desktop", "Documents", "folder1", "omegaproject", "Downloads  ", "Server"
     ];
-
-    // Arte ASCII para exibir ao iniciar, após a autenticação
     const retornoCopia = 'Copying, please wait...'
 
 

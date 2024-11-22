@@ -1,4 +1,4 @@
-/* Geral estilo 1
+/*
 body {
   margin: 0;
   font-family: monospace;
@@ -23,7 +23,6 @@ body {
 
 
 #output {
-  flex-grow: 1;
   white-space: pre-wrap;
   overflow-y: auto;
   padding-right: 10px;
@@ -44,6 +43,7 @@ body {
 }
 
 #input {
+  font-family: monospace;
   flex-grow: 1;
   background: none;
   border: none;
@@ -72,48 +72,67 @@ body {
   }
 }
 
+
 */
 
 
-/* Geral */
 body {
   margin: 0;
   font-family: monospace;
-  background-color: #121212; /* Fundo preto */
-  color: #ff005c; /* Texto verde típico de terminal */
+  background-color: #121212;
+  color: #ff005c;
 }
 
-/* Terminal */
+
 #terminal {
   display: flex;
   flex-direction: column;
   height: 100vh;
   padding: 20px;
   box-sizing: border-box;
-  overflow-y: auto; /* Rolagem automática se o conteúdo ultrapassar o limite */
+  overflow-y: auto; 
 }
 
 #output {
-  flex-grow: 1;
-  white-space: pre-wrap; /* Mantém quebras de linha */
+  white-space: pre-wrap; 
   overflow-y: auto;
 }
 
 #input-container {
+  font-family: monospace;
   display: flex;
   align-items: center;
 }
 
-/* Estilo do Prompt e Input */
+
 .prompt {
   margin-right: 10px;
 }
 
 #input {
+  font-family: monospace;
   flex-grow: 1;
   background: none;
   border: none;
   outline: none;
   color: inherit;
   font-size: inherit;
+}
+
+/* Cursor Start */
+.cursor {
+  font-size: 12px;
+  color: #ff005c;
+  background-color: #ff005c;
+  position: relative;
+  opacity: 1;
+  height: 1.5em;
+  width: 10px;
+  max-width: 10px;
+  transform: translateY(4px);
+  overflow: hidden;
+  text-indent: -5px;
+  display: inline-block;
+  text-decoration: blink;
+  animation: blinker 1s linear infinite;
 }
