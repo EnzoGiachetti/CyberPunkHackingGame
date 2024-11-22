@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let authStep = 0; // Controle de autenticação inicial
     let isAuthenticated = false; // Controle se a autenticação foi bem-sucedida
     let sudoAuthenticated = false; // Controle se o sudo foi autenticado
-    const sudoPassword = "ezekiel123"; // Senha para o sudo
+    const sudoPassword = "ezekiel2077"; // Senha para o sudo
 
     // Lista de "arquivos" e "diretórios" simulada para o comando `ls`
     const directoryContents = [
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Verifica se o código está correto e avança
             if (authStep === 0) {
-                if (inputValue === "CASHL24553ZIPOPEN8654CATCODESOLUTION12358732") {
+                if (inputValue === "8Y3K-Z1QW-7PLX-B9T2-HG5K-8SF3-12GF-G4HG-21KH-4K7D") {
                     appendToOutput("Correct code! Initializing the system...");
                     isAuthenticated = true; // Marca como autenticado
                     authStep = 1; // Avança para o próximo passo
