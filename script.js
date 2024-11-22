@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 case "ls":
                     listDirectoryContents(); // Lista os arquivos/diretórios
                     break;
-                case "cd projetoomega":
+                case "cd omegaproject":
                     appendToOutput(
                         "...\n" +
                         ".....\n" +
