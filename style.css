@@ -1,0 +1,119 @@
+/* Geral estilo 1
+body {
+  margin: 0;
+  font-family: monospace;
+  background-color: #121212;
+  color: #ff005c; 
+}
+
+
+#terminal {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 800px; 
+  margin: auto; 
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #303030; 
+  overflow-y: auto;
+  scroll-behavior: smooth; 
+  background-color: #1e1e1e; 
+}
+
+
+#output {
+  flex-grow: 1;
+  white-space: pre-wrap;
+  overflow-y: auto;
+  padding-right: 10px;
+  line-height: 1.5; 
+}
+
+
+#input-container {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+
+.prompt {
+  margin-right: 10px;
+  color: #888888;
+}
+
+#input {
+  flex-grow: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-size: inherit;
+  padding: 5px 10px; 
+  border: 1px solid #303030; 
+  border-radius: 4px; 
+}
+
+#input:focus {
+  border-color: #ff005c; 
+  background-color: #121212; 
+}
+
+
+@media (max-width: 600px) {
+  #terminal {
+    height: 90vh;
+    padding: 10px;
+  }
+
+  #input {
+    font-size: 14px;
+  }
+}
+
+*/
+
+
+/* Geral */
+body {
+  margin: 0;
+  font-family: monospace;
+  background-color: #121212; /* Fundo preto */
+  color: #ff005c; /* Texto verde típico de terminal */
+}
+
+/* Terminal */
+#terminal {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Rolagem automática se o conteúdo ultrapassar o limite */
+}
+
+#output {
+  flex-grow: 1;
+  white-space: pre-wrap; /* Mantém quebras de linha */
+  overflow-y: auto;
+}
+
+#input-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo do Prompt e Input */
+.prompt {
+  margin-right: 10px;
+}
+
+#input {
+  flex-grow: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-size: inherit;
+}
